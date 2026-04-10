@@ -140,14 +140,6 @@ useEffect(() => {
 }, []);
 ```
 
-## Database
-
-See `supabase/` directory for SQL schemas.
-
-## Environment Variables
-
-Configure in Vercel dashboard or `.env.local` for local development.
-
 ## Commands
 
 ```bash
