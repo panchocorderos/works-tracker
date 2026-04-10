@@ -4,14 +4,6 @@
 This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` before writing code. Heed deprecation notices.
 <!-- END:nextjs-agent-rules -->
 
-# Project Overview
-
-| Item | Detail |
-|------|--------|
-| Name | Works Tracker |
-| URL | https://works-tracker.vercel.app |
-| GitHub | https://github.com/panchocorderos/works-tracker |
-
 ## Tech Stack
 
 - **Next.js** 16 with App Router + Turbopack
