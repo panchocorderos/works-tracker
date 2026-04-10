@@ -17,6 +17,24 @@ This is a Next.js 16 application for managing construction/service works with:
 - Leaflet + OpenStreetMap for maps
 - Recharts for charts
 
+## Important Patterns
+
+- **Supabase**: Use `getSupabaseClient()` for client, `createClient()` for server
+- **Shadcn v4**: No `asChild` - use `render` prop instead
+- **Leaflet**: Use dynamic import with `ssr: false`
+
+## Quick Start
+
+```bash
+npm run dev     # Dev server
+npm run build   # Production build
+npm run lint    # Lint
+```
+
+## Available Skills
+
+See [AGENTS.md](AGENTS.md) for full skill list and auto-invoke rules.
+
 ## Available Skills
 
 Use these skills for detailed patterns:
