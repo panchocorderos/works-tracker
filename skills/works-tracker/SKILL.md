@@ -140,44 +140,13 @@ useEffect(() => {
 }, []);
 ```
 
-## Database Schema
+## Database
 
-### Works Table
-
-```sql
-CREATE TABLE works (
-  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-  name TEXT NOT NULL,
-  client TEXT,
-  description TEXT,
-  start_date DATE NOT NULL,
-  due_date DATE NOT NULL,
-  actual_end_date DATE,
-  latitude DOUBLE PRECISION,
-  longitude DOUBLE PRECISION,
-  created_at TIMESTAMPTZ DEFAULT NOW(),
-  updated_at TIMESTAMPTZ DEFAULT NOW()
-);
-```
-
-### Work Photos Table
-
-```sql
-CREATE TABLE work_photos (
-  id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-  work_id UUID REFERENCES works(id) ON DELETE CASCADE,
-  url TEXT NOT NULL,
-  description TEXT,
-  created_at TIMESTAMPTZ DEFAULT NOW()
-);
-```
+See `supabase/` directory for SQL schemas.
 
 ## Environment Variables
 
-```bash
-NEXT_PUBLIC_SUPABASE_URL=your-supabase-url
-NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
-```
+Configure in Vercel dashboard or `.env.local` for local development.
 
 ## Commands
 
