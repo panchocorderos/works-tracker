@@ -64,8 +64,8 @@ works-tracker/
 
 ### Environment Variables
 
-- `NEXT_PUBLIC_SUPABASE_URL`
-- `NEXT_PUBLIC_SUPABASE_ANON_KEY`
+- See `.env.local` for local development
+- Configure in Vercel for production
 
 ## Code Style
 
